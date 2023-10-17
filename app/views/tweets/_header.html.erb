@@ -1,1 +1,56 @@
-<h1>部分テンプレです。</h1>
+<!DOCTYPE html>
+<html lang="ja">
+    <h1><a href="header.html.erb"></a></h1>
+    <%= link_to root_path do %>
+        <%= image_tag("x.jpg", alt: "ロゴ", class: "logo") %>
+    <% end %>
+<head>
+    <meta charset="utf-8">
+    <link href="app/stylesheets/application.css" rel="stylesheet">
+    <title>ホーム</title>
+</head>
+
+<header>
+<nav>
+   <ul>
+       <a href=".">ツイート</a>
+       <a href=".">ツイートと返信</a>
+       <a href=".">メディア</a>
+       <a href=".">いいね</a>
+   </ul> 
+</nav>
+</hader>
+
+<body>
+    
+    <div class="container">
+        <div class="column">
+            <h2>MGA  @mgamusic</h2>
+            <%= image_tag 'download.jpg', width: '50%' %>
+            <p>今後更に人気が高まる注目のバンド。</p>
+            <p>Mrs. GREEN APPLEです。</p>
+        </div>
+    </div>
+    
+<div class="container">
+    <div id="wrapper">
+        <div id="sidebar">
+
+            <ul>
+                <div class="home">ホーム</div><br>
+                <li><a href="#">話題を検索</a></li><br>
+                <li><a href="#">通知</a></li><br>
+                <li><a href="#">メッセージ</a></li><br>
+                <li><a href="#">ブックマーク</a></li><br>
+                <li><a href="#">リスト</a></li><br>
+                <li><a href="#">プロフィール</a></li><br>
+                <li><a href="#">もっと見る</a></li><br>
+                <button>ツイートする</button>
+                <!-- 他のリンクを追加 -->
+            </ul>
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

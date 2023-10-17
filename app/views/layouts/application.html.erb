@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <link href="app/stylesheets/application.css" rel="stylesheet">
     <title>SWEXEL3</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
@@ -12,6 +14,8 @@
 
   <body>
     <%=render 'header', p:"hello" %>
+    
     <%= yield %>
+    
   </body>
 </html>
